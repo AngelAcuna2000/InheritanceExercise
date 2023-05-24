@@ -29,11 +29,30 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            Bird parrot = new Bird()
+            {
+                BirdType = "parrot",
+                CanFly = true,
+                CanSing = true,
+                CanTalk = true,
+            };
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            Reptile turtle = new Reptile()
+            {
+                ReptileType = "turtle",
+                HasScales = true,
+                HasEyelids = true,
+                HasForkedTongue = false,
+            };
+
+            parrot.BirdInformation();
+            turtle.ReptileInformation();
         }
     }
 }
